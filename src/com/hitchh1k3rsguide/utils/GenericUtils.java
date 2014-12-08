@@ -48,7 +48,7 @@ public class GenericUtils
             long least = longBuffer.getLong();
             long most = longBuffer.getLong();
 
-            // return new UUID(most, least);
+            return new UUID(most, least);
         }
         catch (Exception e)
         {

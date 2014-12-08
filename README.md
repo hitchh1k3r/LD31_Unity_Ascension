@@ -28,7 +28,7 @@ Post Competition Goals
   - [ ] Improve the score display to show the players how to get different points a bit better (maybe highlight points when you get them)
   - [ ] Add an unlocked state to each of the 7 scores
   - [ ] Add the ascension boss battle, where two players on different teams can cooperate to get on the ascended team
-  - [?] Possibly add a fallen state, where a player can have an opposite ending to the planned one, becoming one with darkness (still fits with the idea of unity ^_^)
+  - [ ] ??? Possibly add a fallen state, where a player can have an opposite ending to the planned one, becoming one with darkness (still fits with the idea of unity ^_^)
 
 License
 -----------

@@ -214,10 +214,7 @@ public class Server
             {
                 new Packet(Packet.REQUEST_TEAM, null).send(this);
             }
-            else
-            {
-                Server.gameThread.joinWorld(this);
-            }
+            Server.gameThread.joinWorld(this);
         }
 
         public static class SendThread implements Runnable

@@ -3,6 +3,8 @@ package com.hitchh1k3rsguide.ld31;
 import java.io.File;
 import java.nio.ByteBuffer;
 
+import javax.swing.JOptionPane;
+
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GLContext;
 import org.lwjgl.system.glfw.GLFW;
@@ -206,6 +208,20 @@ public class Main
 
     public static void main(String[] args)
     {
+        String[] options = new String[] { "Play Game!", "Exit" };
+        int selection = JOptionPane
+                .showOptionDialog(
+                        null,
+                        "This game will connect to my server and the connection must be maintained durring the gameplay.\n"
+                                + "Networked games have some inherent gameplay and security concerns, so I'd like you to be aware\n"
+                                + "that's what's happening before you play.\n" + "Is this okay?",
+                        "Online Gameplay", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE,
+                        null, options, options[1]);
+        if (selection == 1)
+        {
+            System.exit(0);
+        }
+
         System.setProperty("org.lwjgl.librarypath", GenericUtils.getJarDir() + File.separator
                 + "natives");
 

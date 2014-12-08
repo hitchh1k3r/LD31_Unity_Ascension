@@ -284,7 +284,6 @@ public class Packet
             if (isServer && client.player.team == 0)
             {
                 client.player.team = (int) data;
-                Server.gameThread.joinWorld(client);
                 Server.broadcast(WorldEvents.makePacket((int) client.player.position.x
                         + EntityPlayer.ITEM_OFFSET_X, (int) client.player.position.y
                         + EntityPlayer.ITEM_OFFSET_Y, WorldEvents.PLAYER_SPAWN, client.player.team));
